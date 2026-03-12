@@ -1,0 +1,98 @@
+:root {
+--accent-color: #F59E0B;
+--text-color: #adadb3;
+--secondary-text: #71717a;
+--dark-text: #27272a;
+--button-color: #6366f1;
+--secondary-button: #22c55e;
+--background-color: #3a3737 ;
+--secondary-background: #e4e4e7;
+
+
+
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ol,
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  background-color: transparent;
+}
+
+a:hover,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  vertical-align: middle;
+  border-style: none;
+}
+
+button {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  background: transparent;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+address {
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+  list-style: none;
+}
+
+html,
+body {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  font-family: var(--font-family);
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-size: 18px;
+}
