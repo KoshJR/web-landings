@@ -4,30 +4,100 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/styles.css" />
-    <title>Design Studio</title>
+    <title>HTML/CSS</title>
   </head>
   <body>
-    <header></header>
     <main>
       <section>
-        <div>
-          <h2>Make.</h2>
-          <h2>Drink.</h2>
-          <h2>Enjoy.</h2>
-          <p>
-            Craft beautiful digital experiences with simplicity and purpose.
-            Turn ideas into real products, build with modern technologies, and
-            create things that inspire people around the world.
-          </p>
-          <button>Explore</button>
-        </div>
-        <div>
-          <ul>
-            <li></li>
-          </ul>
-        </div>
+        <!-- Headings organize your content and make it easier for people and search engines to understand your page
+      Start with h1(main heading) and <h2> to <h6> for other sections-->
+        <h1>Main title</h1>
+        <h2>Second title</h2>
+        <h3>Third title</h3>
+        <!-- and others -->
+      </section>
+      <section>
+        <h2>Text</h2>
+        <!-- paragraphs are used to show blocks of text  -->
+        <p>
+          Here you can write your text.<br />
+          And break a line with tag.
+        </p>
+        <p>This is <strong>bold</strong> text</p>
+        <p>this is <em>italic</em> text</p>
+        <!-- with these tags we can make text: bold and italic. Or we can use tags <b> for bold text and tag <i> for italic text -->
+        <!-- to create a line break we use tag <br> -->
+      </section>
+      <section>
+        <h2>Lists</h2>
+        <!-- ul is an unordered list with items that are not ordered by numbers or letters. 
+        Instead each item is marked with a bullet point.
+      tag <li> represent a list item  -->
+        <ul>
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+        </ul>
+        <!-- an ordered list is a list of items that are ordered by numbers or letters  -->
+        <ol>
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+        </ol>
+        <!-- you always can place one list inside another - this is called a nested list.
+         This is very useful for creating hierarchical structures.  -->
+        <ul>
+          <li>Item 1</li>
+          <li>
+            Item 2
+            <ul>
+              <li>Subitem 2.1</li>
+              <li>Subitem 2.2</li>
+            </ul>
+          </li>
+          <li>Item 3</li>
+        </ul>
+      </section>
+      <section>
+        <h2>HTML Attributes</h2>
+        <p>
+          In HTML, attributes provide additional information about elements.
+          They are used to define properties of an element, such as its size,
+          color or behavior.
+        </p>
+        <!-- <tagname attribute1="value1" attribute2="value2" attribute3="value3"></tagname>  -->
+      </section>
+      <section>
+        <h2>Links</h2>
+        <p>
+          In HTML, a link (or hyperlink) is an element that connects one web
+          page to another. You can create links to other web pages, files,
+          locations within the same page or any other URL. Here is the basic
+          syntax for creating a link in HTML. <br />
+          <b>href</b> - the destination URL of the link <br />
+          <b>target</b> - this attribute will point how to open link. With value
+          _blank - the link will be opened in new window.
+        </p>
+        <a href="https://www.google.com" target="_blank">Link text</a>
+      </section>
+      <section>
+        <h2>Images</h2>
+        <p>
+          Images can make your webpage more engaging, and adding them in HTML is
+          simple using the "img" tag <br />
+          To display an image you need to use the src attribute - this attribute
+          specifies the image's location (URL or file path) <br />
+          Let's explore some additional attributes to improve your images:
+          <br />1. alt - provides alternative text if image does't load. 2.
+          width and height - Control the size of the image in pixels.
+        </p>
+        <img
+          src="https://coddy.tech/images/bit.svg"
+          alt="Coddy tech"
+          width="400"
+          height="250"
+        />
       </section>
     </main>
-    <footer></footer>
   </body>
 </html>
