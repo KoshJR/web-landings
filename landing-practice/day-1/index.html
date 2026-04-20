@@ -98,6 +98,383 @@
           height="250"
         />
       </section>
+      <section>
+        <h2>Divisions (div's)</h2>
+        <p>
+          Imagine you want yo break your webpage into blocks to organize your
+          content. In HTML, you can use a div to group elements together "div"
+          tags are great for creating layouts and separating sections.
+        </p>
+        <div>
+          <h3>Inline Spans. (This content is in the "div")</h3>
+          <p>
+            What if we have a sentence and need to highlight just one word or a
+            small part of it?. We can use the "span" tag. It helps us apply
+            styles or make changes to only a <span>specific part</span> of the
+            text without affecting the rest.
+          </p>
+        </div>
+      </section>
+      <section>
+        <h2>Semantic Tags</h2>
+        <p>
+          Semantic tags in HTML help define the meaning of content, making the
+          code clearer for both developers and browsers. Unlike 'div' and
+          'span', they give context to the enclosed content
+        </p>
+        <p>Common Semantic Tags:</p>
+        <ul>
+          <li>header - Introductory content, usually at the top.</li>
+          <li>nav - Contains navigation links.</li>
+          <li>main - Main content of the page.</li>
+          <li>article - A self-contained piece like a blog post.</li>
+          <li>section - Groups related content, often with a heading.</li>
+          <li>
+            footer - Bottom section with info like copyright or contact details.
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h3>Sections and Articles</h3>
+        <p>
+          In HTML, ''section'' and 'article'' tags are used to organize content
+          into logical parts.
+        </p>
+        <ul>
+          <li>
+            The 'section' tag defines a section in a document, such as chapters,
+            headers, footers, or any other sections of the document. It's a way
+            to group related content together. For example, you might use
+            'section' to divide a page into an introduction, content, and
+            contact information.
+          </li>
+          <li>
+            The 'article' tag specifies independent, self-contained content. It
+            should make sense on its own, and it should be possible to read it
+            independently from the rest of the web site. Examples of where an
+            'article' element can be used: a forum post, a blog entry, a news
+            story, or a comment.
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2>Forms and Inputs</h2>
+        <h3>Form Basics</h3>
+        <p>
+          In HTML, forms are used to collect user input. A form is a section of
+          a document that contains controls such as text fields, buttons,
+          checkboxes, and more. Users can interact with these controls to
+          provide data, which can then be sent to a server for processing. Forms
+          are essential for creating interactive web pages that allow users to
+          submit information, such as login credentials, search queries, or
+          feedback.
+        </p>
+        <h4>Here is example of simple form</h4>
+        <p>
+          In HTML, text inputs are used to create form fields where users can
+          enter text. There are various types of text inputs, each designed for
+          different kinds of text-based data. The most common type is the
+          single-line text input, created using the 'input' tag with the type
+          attribute set to "text".
+        </p>
+        <ul>
+          <li>
+            <p>input - the tag that defines the input field</p>
+          </li>
+          <li>
+            <p>type - an attribute that specifies type of input.</p>
+          </li>
+          <li>
+            <p>
+              name - an attribute that gives the input field a name, which is
+              used to identify the data when the form is submitted
+            </p>
+          </li>
+          <li>
+            <p>
+              placeholder - provides a short hint that describes the expected
+              value of the input field "like "Enter your name"
+            </p>
+          </li>
+          <li>
+            <p>value - sets the initial value of the input field</p>
+          </li>
+          <li>
+            <p>
+              maxlength - specifies the maximum number of characters allowed in
+              the input field
+            </p>
+          </li>
+          <li>
+            <p>
+              id - the unique identifier for the form field, which matches the
+              for attribute in the label
+            </p>
+          </li>
+        </ul>
+        <ul>
+          <h4>Types of inputs:</h4>
+          <li>
+            <p>text - specifies input as a text</p>
+            <p>
+              password - specifies input as a password (for collecting passwords
+              from users). Characters typed into password field are masked to
+              prevent others from seeing the password as it is being typed
+            </p>
+          </li>
+        </ul>
+        <form>
+          <label for="nickname">Nickname:</label>
+          <input
+            type="text"
+            name="nickname"
+            placeholder="Enter your nickname"
+            maxlength="12"
+            id="nickname"
+          />
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            name="userpassword"
+            placeholder="Enter your password"
+            maxlength="16"
+            id="password"
+          />
+        </form>
+        <h3>Labels for inputs:</h3>
+        <p>
+          it's not always very clear what an input is about without a label. A
+          label gives users a clear visual cue on what type of input is expected
+          in that field. Labels are created using the 'label' tag.
+        </p>
+        <ul>
+          <li>
+            <p>label - the tag that creates the label</p>
+          </li>
+          <li>
+            <p>
+              for - a link between the label and a form field. The value of for
+              should match the id of the form field
+            </p>
+          </li>
+          <li>
+            <p>
+              Label text - the text that describes what the form field is for
+            </p>
+          </li>
+        </ul>
+        <div>
+          <h3>Radio Buttons</h3>
+          <p>
+            In HTML, radio buttons are used to create a set of mutually
+            exclusive options, where the user can select only one option from
+            the group. Radio buttons are created using the 'input' tag with the
+            type attribute set to "radio".
+          </p>
+          <ul>
+            <li>
+              <p>
+                type="radio" - An attribute that specifies the input type as a
+                radio button.
+              </p>
+            </li>
+            <li>
+              <p>
+                name - An attribute that groups radio buttons together. All
+                radio buttons with the same name belong to the same group, and
+                only one option within a group can be selected at a time.
+              </p>
+            </li>
+            <li>
+              <p>
+                value: An attribute that specifies the value associated with the
+                radio button. This value is sent to the server when the form is
+                submitted.
+              </p>
+            </li>
+          </ul>
+          <form>
+            <input type="radio" name="mygroup" id="option1" value="option1" />
+            <label for="option1">Option 1</label>
+            <br />
+            <input type="radio" name="mygroup" id="option2" value="option2" />
+            <label for="option2">Option 2</label>
+            <br />
+            <input type="radio" name="mygroup" id="option3" value="option3" />
+            <label for="option3">Option 3</label>
+            <br />
+          </form>
+        </div>
+        <div>
+          <h3>Checkboxes</h3>
+          <p>
+            In HTML, checkboxes are used to create a set of options where the
+            user can select multiple options from the group. Checkboxes are
+            created using the 'input' tag with the type attribute set to
+            "checkbox".
+          </p>
+          <ul>
+            <li>
+              <p>
+                type="checkbox" - An attribute that specifies the input type as
+                a checkbox
+              </p>
+            </li>
+            <li>
+              <p>
+                name: An attribute that groups checkboxes together. Unlike radio
+                buttons, multiple checkboxes with the same name can be selected
+                at the same time.
+              </p>
+            </li>
+            <li>
+              <p>
+                value: An attribute that specifies the value associated with the
+                checkbox. This value is sent to the server when the form is
+                submitted.
+              </p>
+            </li>
+          </ul>
+          <form>
+            <input
+              type="checkbox"
+              name="mygroup1"
+              id="option1"
+              value="option1"
+            />
+            <label for="option1">Option 1</label>
+            <br />
+            <input
+              type="checkbox"
+              name="mygroup1"
+              id="option2"
+              value="option2"
+            />
+            <label for="option2">Option 2</label>
+            <br />
+            <input
+              type="checkbox"
+              name="mygroup1"
+              id="option3"
+              value="option3"
+            />
+            <label for="option3">Option 3</label>
+            <br />
+          </form>
+        </div>
+        <div>
+          <h3>Dropdowns</h3>
+          <p>
+            In HTML, a dropdown menu is a list of items that appears when a user
+            clicks on or hovers over an element. Dropdowns are commonly used to
+            present a list of choices in a compact way. To create a dropdown,
+            you use the 'select' tag along with 'option' tags for the individual
+            items.
+          </p>
+          <ul>
+            <li>
+              <p>select - The tag that defines the dropdown menu.</p>
+            </li>
+            <li>
+              <p>
+                name - An attribute that gives the dropdown a name, which is
+                used to identify the selected value when the form is submitted.
+              </p>
+            </li>
+            <li>
+              <p>option - A tag that defines an item in the dropdown list.</p>
+            </li>
+            <li>
+              <p>
+                value An attribute that specifies the value associated with the
+                option. This value is sent to the server when the form is
+                submitted.
+              </p>
+            </li>
+            <li>
+              <p>
+                Option text - The visible text that appears in the dropdown list
+                for each option.
+              </p>
+            </li>
+          </ul>
+          <form>
+            <select name="colors">
+              <option value="red">Red</option>
+              <option value="green">Green</option>
+              <option value="blue">Blue</option>
+            </select>
+          </form>
+        </div>
+      </section>
+      <section>
+        <h2>Buttons</h2>
+        <p>
+          Buttons are interactive elements in HTML used to trigger actions when
+          clicked. To create a button, you use the 'button' tag.
+        </p>
+        <button>Click me</button>
+        <div>
+          <h3>Buttons in form</h3>
+          <p>Type of buttons:</p>
+          <ul>
+            <li>
+              <p>type="submit" - sends the form data to the server</p>
+            </li>
+            <li>
+              <p>
+                type="reset" - clears all fields and resets them to their
+                default values
+              </p>
+            </li>
+          </ul>
+          <button type="submit">Send</button>
+          <button type="reset">Clear</button>
+        </div>
+      </section>
+      <section>
+        <h2>Tables</h2>
+        <p>
+          In HTML, a table is a way to organize data into rows and columns.
+          Tables are commonly used to display data in a structured format, such
+          as schedules, statistics, or any other type of information that can be
+          presented in a grid. To create a table, you use the 'table' tag along
+          with other tags like 'tr' for table rows, 'td' for table data (cells),
+          and 'th'>' for table headers.
+        </p>
+        <ul>
+          <li>
+            <p>table - The tag that defines the table</p>
+          </li>
+          <li>
+            <p>tr - The tag that defines a table row.</p>
+          </li>
+          <li>
+            <p>
+              th - The tag that defines a header cell. Header cells are
+              typically used for column or row titles and are displayed in bold
+              by default.
+            </p>
+          </li>
+          <li>
+            <p>td - The tag that defines a standard cell in the table.</p>
+          </li>
+        </ul>
+        <table>
+          <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+          </tr>
+          <tr>
+            <td>Row 1, Cell 1</td>
+            <td>Row 1, Cell 2</td>
+          </tr>
+          <tr>
+            <td>Row 2, Cell 1</td>
+            <td>Row 2, Cell 2</td>
+          </tr>
+        </table>
+      </section>
     </main>
   </body>
 </html>
