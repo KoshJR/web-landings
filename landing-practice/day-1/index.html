@@ -484,6 +484,41 @@
             <td>Row 2, Cell 2</td>
           </tr>
         </table>
+        <p>
+          In HTML, you can make table cells span multiple rows or columns using
+          the rowspan and colspan attributes. These attributes allow you to
+          create more complex table layouts by merging cells together. The
+          'colspan' attribute is used to specify the number of columns a cell
+          should span. It is added to the 'td'or'td' 'th'tag of the cell that
+          you want to expand.'th'
+        </p>
+        <table border="1">
+          <tr>
+            <th colspan="2">Name</th>
+          </tr>
+          <tr>
+            <td>John</td>
+            <td>Doe</td>
+          </tr>
+        </table>
+        <p>
+          The rowspan attribute is used to specify the number of rows a cell
+          should span. It is also added to the 'td'or'td' 'th'tag of the cell
+          that you want to expand.'th'
+        </p>
+        <table border="1">
+          <tr>
+            <th>Employee</th>
+            <th>Shift</th>
+          </tr>
+          <tr>
+            <td rowspan="2">Alex</td>
+            <td>Morning</td>
+          </tr>
+          <tr>
+            <td>Evening</td>
+          </tr>
+        </table>
       </section>
     </main>
   </body>
