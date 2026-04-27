@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS</title>
+  </head>
+  <body>
+    <section>
+      <h1>CSS - Cascading Styles Sheet</h1>
+      <div>
+        <p>There are 3 types of CSS styles:</p>
+        <ul>
+          <li>
+            Inline styles - applied directly to elements via the style
+            attribute. (Not scalable, hard to override and reuse). Not
+            recommended.
+          </li>
+          <li>
+            Embedded stylesheet - rules are added inside the style tag. The
+            style tag is placed in the head section after metadata, typically
+            after the title tag. (Cannot be reused across multiple pages and
+            difficult to scale). Not recommended.
+          </li>
+          <li>
+            External stylesheet - a separate .css file is created in the
+            project. (Easy to scale, maintain, and reuse across multiple pages).
+            Always used.
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h2>CSS Syntax</h2>
+        <p>
+          In CSS, syntax refers to the set of rules that define how CSS code
+          should be written. Understanding CSS syntax is essential for creating
+          well-structured and functional stylesheets. A basic CSS rule consists
+          of a selector and a declaration block.
+        </p>
+        <ul>
+          <li>
+            Selector: Specifies the HTML element you want to style (e.g. p, div,
+            img).
+          </li>
+          <li>
+            Declaration Block: Contains one or more declarations enclosed in
+            curly braces {}.
+          </li>
+          <li>
+            Declaration: Consists of a property and a value, separated by a
+            colon :(e.g. color:green;). Each declaration should be terminated
+            with a semicolon (;).
+          </li>
+          <li>
+            Property: The style attribute you want to change (e.g., color,
+            font-size).
+          </li>
+          <li>
+            Value: The value you want to set for the property (e.g., blue,
+            16px).
+          </li>
+        </ul>
+        <p>
+          For example: <br />
+          p { <br />
+          color: blue;
+          <br />
+          font-size: 16px
+          <br />
+          }
+        </p>
+      </div>
+      <div>
+        <h2>CSS Comments</h2>
+        <p>
+          Comments are notes within the code that do not get executed, they are
+          just for making the code more readable and maintainable. In CSS,
+          comments are written between /* and */ tags. Anything placed between
+          these tags will be treated as a comment and will not affect the
+          styling of the page. Here's how you can write a comment in CSS:
+        </p>
+        <!-- <p>Commented text</p>  -->
+      </div>
+    </section>
+    <section>
+      <h2>The Head Tag</h2>
+      <p>
+        In HTML, the head tag is a container for metadata about the HTML
+        document. Metadata is data that describes the document but is not
+        displayed on the page itself. The head element is placed between the
+        html tag and the body tag. The head tag can include various elements,
+        such as:
+      </p>
+      <ul>
+        <li>
+          title - Specifies the title of the HTML document, which is displayed
+          in the browser's title bar or tab.
+        </li>
+        <li>style - Contains internal CSS styles for the document.</li>
+        <li>link - Links to external resources, such as CSS files.</li>
+        <li>
+          meta - Provides metadata about the document, such as character set,
+          description, and keywords.
+        </li>
+        <li>script - Embeds client-side scripts, such as JavaScript.</li>
+      </ul>
+    </section>
+  </body>
+</html>
